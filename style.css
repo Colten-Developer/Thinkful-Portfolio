@@ -1,0 +1,54 @@
+/*
+colors
+primary maroon
+secondary slategray
+text linen
+*/
+/*
+to center all text and a base background color
+*/
+body{
+		text-align:center;
+		background-color: slategray;
+}
+/*
+centering the bullet points/numbers in lists
+*/
+ul, ol{
+	display: table;
+	margin: 0 auto;
+	text-align:left;
+}
+/*
+setting fonts. with backup
+*/
+header, footer{
+	font-family: "lucida handwriting", serif;
+	color:linen
+}
+/*
+setting different color for main background, fonts in main, and softening edges
+*/
+main{
+	background-color: maroon;
+	font-family: helvetica, georgia;
+	border-radius: 5%;
+}
+/*
+round image with padding and border
+*/
+
+img{
+	border-radius: 50%;
+	padding: 0px;
+	height: 300px;
+	border: 3px solid slategray;
+	margin: 5px;
+}
+
+
+hr{
+	padding:0px;
+	border-top: 2px solid slategray;
+	border-bottom: 2px solid slategray;
+}
