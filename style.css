@@ -14,6 +14,11 @@ body{
 /*
 centering the bullet points/numbers in lists
 */
+
+a:link {color:grey;}
+a:visited {color: black}
+
+
 ul, ol{
 	display: table;
 	margin: 0 auto;
@@ -29,6 +34,10 @@ header, footer{
 /*
 setting different color for main background, fonts in main, and softening edges
 */
+section {
+	background-color: maroon;
+}
+
 main{
 	background-color: maroon;
 	font-family: helvetica, georgia;
@@ -42,13 +51,46 @@ img{
 	border-radius: 50%;
 	padding: 0px;
 	height: 300px;
+	width: 300px;
+	object-fit: cover;
 	border: 3px solid slategray;
 	margin: 5px;
 }
 
-
+/*
+change the looks of horizontal rule
+*/
 hr{
 	padding:0px;
 	border-top: 2px solid slategray;
 	border-bottom: 2px solid slategray;
 }
+
+.group{
+	display: flex;
+	flex-direction: column;
+}
+
+.item{
+	flex: 1;
+}
+
+@media all and (min-width: 900px) {
+	main{
+		background-color: maroon;
+	}
+	.group{
+		flex-direction: row
+	}
+}
+
+form input, form textarea{
+	width: 10%;
+	margin-bottom: 10px;
+}
+
+form textarea{
+	width: 30%;
+	height: 160px;
+}
+
