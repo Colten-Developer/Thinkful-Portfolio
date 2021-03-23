@@ -10,12 +10,13 @@ to center all text and a base background color
 body{
 		text-align:center;
 		background-color: slategray;
+		
 }
 /*
 centering the bullet points/numbers in lists
 */
 
-a:link {color:black;}
+a:link {color:white;}
 a:visited {color: black}
 
 
@@ -29,7 +30,8 @@ setting fonts. with backup
 */
 header, footer{
 	font-family: "lucida handwriting", serif;
-	color:linen
+	color:linen;
+	background-color: slategray;
 }
 /*
 setting different color for main background, fonts in main, and softening edges
@@ -42,6 +44,7 @@ main{
 	background-color: maroon;
 	font-family: helvetica, georgia;
 	border-radius: 5%;
+	color:linen;
 }
 /*
 round image with padding and border
@@ -82,6 +85,25 @@ hr{
 	.group{
 		flex-direction: row
 	}
+	nav {
+		display:flex;
+		justify-content: flex-end;
+	}
+	a{
+		margin: 5px
+	}
+	header h1 {
+		display: flex;
+		justify-content: space-between;
+	}
+	header h2 {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+form{
+	font-family: helvetica, georgia;
 }
 
 form input, form textarea{
@@ -93,4 +115,10 @@ form textarea{
 	width: 30%;
 	height: 160px;
 }
+
+
+
+
+
+
 
